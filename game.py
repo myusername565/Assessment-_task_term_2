@@ -1,12 +1,14 @@
+# importing other codes from other files into this file
 import random
-
 from map import Map
 from player import Player
 from wumpus import Wumpus
 
 
+# The main game class
 class Game:
 
+    # initialising the class
     def __init__(self):
         self.map = Map()
         self.player = Player()
@@ -14,6 +16,7 @@ class Game:
 
         self.setup_game()
 
+    # creating the pre-game logic
     def setup_game(self):
 
         rooms = list(self.map.rooms.values())
@@ -37,6 +40,7 @@ class Game:
         bat2 = rooms.pop()
         bat2.has_bats = True
 
+    # checking for player death
     def check_current_room(self):
         room = self.player.current_room
 
@@ -65,6 +69,7 @@ class Game:
 
             return
 
+    # displaying the neccessary information for the player
     def show_status(self):
         room = self.player.current_room
 
@@ -76,6 +81,7 @@ class Game:
         for neighbour in room.neighbours:
             print(f"Room {neighbour.room_number}")
 
+    # displaying nearbye danger/warnings to the player
     def check_nearby_dangers(self):
         room = self.player.current_room
 
