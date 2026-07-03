@@ -1,3 +1,4 @@
+# how the rooms are connected
 connections = {
     1: [2, 5, 8],
     2: [1, 3, 10],

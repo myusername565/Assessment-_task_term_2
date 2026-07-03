@@ -93,6 +93,7 @@ class Game:
             if n.has_bats:
                 print("You hear flapping...")
 
+    # Moving the player
     def move_player(self):
         choice = int(input("Enter room number to move: "))
 
@@ -103,6 +104,7 @@ class Game:
 
         print("Invalid move!")
 
+    # crating the game playthrough
     def play(self):
         print("==============================")
         print("      HUNT THE WUMPUS")
@@ -145,6 +147,7 @@ class Game:
                 print("===================")
                 break
 
+    # shooting arrows
     def shoot_arrow(self):
 
         if self.player.arrows == 0:
