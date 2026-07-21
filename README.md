@@ -13,12 +13,10 @@ The game focuses on strategic movement, exploration, and decision-making while d
 - Object-Oriented Python implementation
 - Randomly generated cave hazards
 - Connected room navigation
-- Wumpus AI movement (if implemented)
 - Hazard warning system
 - Limited arrows for attacking
 - Win and lose conditions
 - Input validation
-- Replay option (if implemented)
 
 ---
 
@@ -38,7 +36,6 @@ The game focuses on strategic movement, exploration, and decision-making while d
    - Move to an adjacent room.
    - Shoot an arrow into an adjacent room.
 9. If the arrow hits the Wumpus, the player wins.
-10. Missing the shot may cause the Wumpus to move (depending on implementation).
 
 ---
 
